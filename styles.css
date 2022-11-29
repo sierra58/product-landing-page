@@ -1,0 +1,227 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: sans-serif, Arial;
+  
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  p.profile-description {
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  .header {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  #header-img {
+    position: fixed;
+    object-fit: cover;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+  }
+  
+  .nav-bar {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .nav-link {
+    padding: 5px 20px;
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+  
+  .profile-banner {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  main {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  
+  .profile-picture {
+    position: block;
+    width: 100px;
+    height: 100px;
+  }
+  
+  section {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  #membership-levels {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #membership-levels h1 {
+    grid-column: 1 / -1;
+  }
+  
+  .currency {
+    font-size: 0.9rem;
+    vertical-align: super;
+  }
+  
+  .per-month {
+    font-size: 1rem;
+  }
+  
+  .membership-box input {
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .membership-box input:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .box-none {
+    border-top: 15px solid transparent;
+  }
+  
+  .box-recommended {
+    border: 3px solid orange;
+    border-top: 15px solid orange;
+    border-radius: 5px;
+  }
+  
+  .membership-box ul {
+    padding: 0 15px;
+  }
+  
+  .membership-box li {
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 20px;
+    color: orangered;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .social-icons a:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  #video {
+    width: 100%;
+    margin: 20px 0;
+    object-fit: cover;
+  }
+  
+  .recent-box {
+    border-bottom: 2px solid orange;
+    margin-top: 30px;
+  }
+  
+  .recent-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  #submit {
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  #submit:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: orange;
+    margin-top: 30px;
+  }
+  
+  footer a {
+    color: orange;
+  }
+  
+  .footer-info {
+    text-align: right;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-info a {
+    margin: 0 10px
+  }
+  
+  .nav-link:hover {
+    background-color: black;
+    color: orange;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-link {
+      font-size: 1.3rem;
+      margin: 0 0;
+      padding: 0px 10px
+    }
+    #membership-levels {
+      overflow: scroll;
+    }
+  }
